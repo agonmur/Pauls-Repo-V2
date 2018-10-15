@@ -66,9 +66,6 @@ for block=1:blocks
     
     trialinfo_b = ft_definetrial(cfg);
     
-%     eventx        = eval(cell2sym({trialinfo_b.event.value}))
-%     trialinfo_b.event = trialinfo_b.event(logical(abs(diff(eventx)))); %clean up the trial struct to get rid of incorrect photodetectors
-%     trialinfo_b.trl   = trialinfo_b.trl(logical(abs(diff(eventx))),:);
     alldata = ft_redefinetrial(trialinfo_b, alldata);
     
     cfg         = [];
