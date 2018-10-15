@@ -1,29 +1,3 @@
-% Delta wave ? (0.1 ? 3 Hz)
-% Theta wave ? (4 ? 7 Hz)
-% Alpha wave ? (8 ? 15 Hz)
-% Mu wave ? (7.5 ? 12.5 Hz)
-% SMR wave ? (12.5 ? 15.5 Hz)
-% Beta wave ? (16 ? 31 Hz)
-% Gamma wave ? (32 ? 100 Hz)
-
-%channel for photodetector
-%channel for audio recording
-%
-% % fixation_event1.set_port_code(17);  # intertrial interval
-% % video_event.set_port_code(26+congruency[which_stim1[K]]); onset of video primes# channels 88, 89, 89 for congruency w/ the picture that appears next in the trial
-% % fixation_event2.set_port_code(18); # trial 100ms SOA
-% % image_event.set_port_code(20); # onset arget picture no cue
-% % image_event2.set_port_code(21); # onset target picture with cue for naming # micro on channel 86
-%
-%
-%
-% cfg=[];
-% cfg.dataset='3055_LR_PI174_2018_06_21_B1.con';
-% cfg.trialdef.prestim=0.5;
-% cfg.trialdef.poststim=1.5;
-% [trl, event] = trig_fun_160_basic(cfg);
-% eval(cell2sym({event.value}))';
-
 function ANA_pipe(rawfile,blocks)
 
 close all
